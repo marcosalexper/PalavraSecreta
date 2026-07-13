@@ -11,4 +11,9 @@ while True:
     if letra_digitada in palavra_secreta:
        letras_acertadas += letra_digitada
 
-    print(letras_acertadas)  
+    for letra_secreta in palavra_secreta:
+        if letra_secreta in letras_acertadas:
+            print(letra_secreta)
+        else:
+            print('*')
+
